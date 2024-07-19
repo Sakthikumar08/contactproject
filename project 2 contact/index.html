@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neomorphic Form</title>
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+       
+body{
+  background: url(pic2.jpeg);   background-blend-mode: darken;   background-color: rgb(0,0,0,0.6);   background-attachment: fixed;      background-repeat: no-repeat; background-size: 100% 100%;
+}
+
+p,
+input,
+select,
+textarea,
+button {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.2px;
+  font-size: 16px;
+}
+div,
+p {
+  color: #babecc;
+  text-shadow: 1px 1px 1px #fff;
+}
+form {
+  padding: 16px;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 15px;
+  height: 600px;
+  margin-top: 100px;
+  background-color: #edeef2;
+  box-shadow: -3px 5px 8px 1px  rgb(164, 163, 163),2px 2px 4px  rgb(164, 163, 163),2px -2px 4px 2px rgb(164, 163, 163);
+
+}
+.segment {
+  padding: 32px 0;
+  text-align: center;
+  color:#2e3446;
+  font-family:Arial, Helvetica, sans-serif ;
+}
+button,
+input {
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 320px;
+  padding: 16px;
+  background-color: #ebecf0;
+  text-shadow: 1px 1px 0 #fff;
+}
+label {
+  display: block;
+  margin-bottom: 24px;
+  width: 100%;
+}
+input {
+  margin-right: 8px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+}
+input:focus {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+button {
+  color: #61677c;
+  font-weight: bold;
+  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+}
+button:hover {
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+}
+button:active {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+button .icon {
+  margin-right: 8px;
+}
+button.unit {
+  border-radius: 8px;
+  line-height: 0;
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+  font-size: 19.2px;
+}
+button.unit .icon {
+  margin-right: 0;
+}
+.btn {
+  background-color: #35c2c4;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'BenchNine', Arial, sans-serif;
+  font-size: 1em;
+  font-size: 22px;
+  line-height: 1em;
+  margin-left: 120px;
+  outline: none;
+  padding: 12px 40px 10px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btn:before,
+.btn:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: '';
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+
+.btn:before {
+  border-color: #35c2c4;
+  border-top-width: 2px;
+  left: 0px;
+  top: -5px;
+}
+
+.btn:after {
+  border-bottom-width: 2px;
+  border-color: #35c2c4;
+  bottom: -5px;
+  right: 0px;
+}
+
+.btn:hover,
+.btn.hover {
+  background-color: #d6d4d2;
+  color:black;
+}
+
+.btn:hover:before,
+.btn.hover:before,
+.btn:hover:after,
+.btn.hover:after {
+  height: 100%;
+  width: 100%;
+  border-color: rgb(222, 219, 219);
+}
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.input-group label {
+  margin: 0;
+  flex: 1;
+}
+
+.segment .fb:hover ,
+.segment .fb:hover ::before{
+  background-color:rgb(48, 113, 252) ;
+  border: 0.2px solid rgb(48, 113, 252);
+  color:white;
+}
+.segment .in:hover ,
+.segment .in:hover ::before{
+  background-image:conic-gradient(rgb(185, 9, 138),rgb(237, 99, 57),orange,rgb(249, 225, 45),orange,rgb(237, 99, 57),rgb(186, 9, 139),rgb(139, 38, 148),rgb(186, 9, 139)) ;
+  border: 0;
+  color:white;
+}
+.segment .gh:hover ,
+.segment .gh:hover ::before{
+ background-image: linear-gradient(purple,rgb(41, 1, 54));
+ border: 0;
+  color:white;
+}
+.segment .lk:hover ,
+.segment .lk:hover ::before{
+  background-color:rgb(30, 68, 181) ;
+  border: 0.2px solid rgb(30, 68, 181);
+  color:white;
+}
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="segment">
+        <h1>Contact</h1>
+      </div>
+
+      <label>
+        <input type="text" placeholder="Name" />
+      </label>
+      <label>
+        <input type="text" placeholder="Email-Address" />
+      </label>
+      <label>
+        <input type="number" placeholder="Phone Number" />
+      </label>
+
+      <div class="input-group">
+        <label>
+          <input type="textarea" placeholder="Message" />
+        </label>
+      
+      </div>
+      
+      <div class="segment">
+        <button class="unit gh" type="button"><i class="fa-brands fa-github"></i></button>
+        <button class="unit fb" type="button"><i class="fa-brands fa-facebook"></i></button>
+        <button class="unit in" type="button"><i class="fa-brands fa-instagram"></i></button>
+        <button class="unit lk" type="button"><i class="fa-brands fa-linkedin-in"></i></button>
+      </div>
+
+      <button class="btn" type="button">Submit</button>
+
+     
+    </form>
+  </body>
+</html>
